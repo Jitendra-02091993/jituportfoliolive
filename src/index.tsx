@@ -2,18 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+// Initialize AOS with custom settings
+AOS.init({
+  duration: 800,        // Animation duration in ms
+  easing: 'ease-in-out', // Easing function
+  once: true,           // Whether animation should happen only once
+  offset: 50,           // Offset (in px) from the original trigger point
+});
+
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
