@@ -129,7 +129,7 @@ const Resume: React.FC = () => {
       <div className="px-4 sm:px-6 lg:px-8 max-w-screen-lg mx-auto">
         <Section id="about" icon={<User />} title="Summary">
           <p className="text-md leading-relaxed text-gray-700 dark:text-gray-300">
-            Innovative Quality Engineer with 5+ years of experience in
+            Innovative Quality Engineer with 6+ years of experience in
             developing and executing quality assurance strategies. Ability in
             utilizing cutting-edge testing tools to streamline processes and
             enhance product quality. Adept at collaborating with crossfunctional
